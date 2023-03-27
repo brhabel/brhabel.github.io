@@ -3,21 +3,63 @@
 <head>
   <style>
   p {margin-top: 0}
+  #sidenav {}
+  #mainbody {}
+  table, th, td {border: 1px solid purple}
+  td {font-size: 90%}
+  caption {color: purple;}
+  td:hover {color: blue;}
+  
   </style>
   <title>My Gaming Websie</title>
 </head>
-<body>
+<body style = "background-color: rgb(207, 149, 128)";>
   <!--1300 for width of header if things don't work out-->
-  <div style = "background-color: rgb(137, 201, 154); text-align: center; width: 80%; height: 20px; margin: 0 auto;" id = "header">
-    <p style = "color: rgb(122, 52, 235);">WELCOME TO MY GAMING WEBSITE</p>
+  <div style = "background-color: rgb(137, 201, 154); text-align: center; width: 1300px; height: 20px; margin: 0 auto; overflow: hidden; min-width: 800px;" id = "header">
+    <p style = "color: rgb(100, 52, 235);">WELCOME TO MY GAMING WEBSITE</p>
   </div>
-  
-  <div id="sidenav" style = "width: 150px; background-color: red; margin: 0 auto;">
-  <span>aaaa</span>
-  </div>
-  
-  <div id = "mainbody" style="width: 1150px; height: 1000px; background-color: rgb(52, 195, 235); margin: 0 auto;">
-	<p>Main Body</p>
+  <div style = "margin: 0 auto; width: 1300px; height: 1000px; border: 5px dotted green;" id = "wholebody">
+    <div id="sidenav" style = "height: 300px; width: 200px; background-color: red; float: left;">
+        <table>
+		  <caption>Favorite Games</caption>
+		  <tr>
+		    <th>Wizard101</th>
+			<th>Warframe</th>
+		  </tr>
+		  <tr>
+		    <td>Wizard101 Review</td>
+			<td>Warframe Review</td>
+		  </tr>
+		  <tr>
+		    <th>Harry Potter Legacy</th>
+			<th>BattleFront</th>
+		  </tr>
+		  <tr>
+		    <td>Harry Potter Legacy Review</td>
+			<td>BattleFront Review</td>
+		  </tr>
+		  <tr>
+		    <th>Shovel Kight</th>
+			<th>Trine 1,2,3,4</th>
+		  </tr>
+		  <tr>
+		    <td>Shovel Knight Reveiw</td>
+			<td>Trine Review</td>
+		  </tr>
+		  <tr>
+		    <th>Deep Rock Galactic</th>
+			<th>FOrge Quest</th>
+		  </tr>
+		  <tr>
+		    <td>Deep Rock Galactic Review</td>
+			<td>Forge Quest Review</td>
+		  </tr>
+		  <tr>
+		</table>
+    </div>
+    <div id = "mainbody" style="width: 1100px; height: 1000px; background-color: rgb(52, 195, 235); float: left;">
+	  <p>Main Body</p>
+    </div>
   </div>
 </body>
 </html>
