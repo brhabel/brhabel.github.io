@@ -2,6 +2,7 @@
 <html>
 <head>
   <style>
+
   p {margin-top: 0; font-family: arial}
   
   table, th, td {border: 1px solid purple; background-color: rgb(255, 102, 153); border-collapse: collapse}
@@ -13,19 +14,39 @@
   td:active {color: rgb(171, 152, 155)}
   
   
-  <!--a:link {text-decoration: none; color: black;}
-  a:visited {text-decoration: none; color: black;}
-  a:hover {text-decoration: none; color: yellow}
-  a:active {text-decoration: none; color: rgb(171, 152, 155);}
-  td:hover > #linkinnav {color: yellow; background-color: rgb(166, 0, 26)}
-  td:active > #linkinnav {color: rgb(171, 152,155)}-->
+  footer a {border: 5px dotted red; padding: 0px 10px}
+  footer a:link {color: orange; text-decoration: none;}
+  footer a:visited {color: red; text-decoration: none;}
+  footer a:hover {color: orange; text-decoration: none;}
+  footer a:active {color: grey; text-decoration: none;}
+  
+  .dropdownlink a:link {color: orange; text-decoration: none;}
+  .dropdownlink {color: red; text-decoration: none;}
+  .dropdownlink {color: orange; text-decoration: none;}
+  .dropdownlink {color: grey; text-decoration: none;}
+  
+  .drpdown {display: none;}
+  #header:hover .drpdown {display: block}
+  
+  
+
   </style>
   <title>My Gaming Websie</title>
 </head>
 <body style = "background-color: rgb(207, 149, 128)" id = "body">
   <!--1300 for width of header if things don't work out-->
-  <div style = "background-color: rgb(137, 201, 154); text-align: center; width: 1300px; height: 20px; margin: 0 auto; overflow: hidden; min-width: 800px;" id = "header">
-    <p style = "color: rgb(100, 52, 235);" id="test">WELCOME TO MY WEBSITE</p>
+  <div style = "background-color: rgb(137, 201, 154); text-align: center; width: 1300px; height: 20px; margin: 0 auto; min-width: 800px;" id = "header">
+    <p style = "color: rgb(100, 52, 235)" id="test">WELCOME TO MY WEBSITE</p>
+	<div class = "drpdown">
+		<a href = "http://www.google.com/" class = dropdownlink>Link 1</a>
+	</div>
+	<div class = "drpdown">
+		<a href = "http://www.google.com/" class = dropdownlink>Link 2</a>
+	</div>
+	<div class = "drpdown">
+		<a href = "http://www.google.com/" class = dropdownlink>Link 3</a>
+	</div>
+
   </div>
   <div style = "margin: 0 auto; width: 1300px; height: 1000px; border: 5px dotted green;" id = "wholebody">
     <div id="sidenav" style = "height: 1000px; width: 200px; background-color: red; float: left;">
@@ -84,9 +105,17 @@
 			</tr>
 		</table>
     </div>
-    <div id = "mainbody" style="width: 1100px; height: 1000px; background-color: rgb(52, 195, 235); float: left;">
+    <div id = "mainbody" style="width: 1100px; height: 1000px; background-color: rgb(52, 195, 235); float: left">
 	  <p>Main Body</p>
     </div>
+	<footer style = "text-align: center; background-color: rgb(43, 77, 189);">
+		<a href="http://www.google.com/">SiteMap</a>
+		<a href="http://www.google.com/">About Me</a>
+		<a href="http://www.google.com/">Fathers Website</a>
+		<a href="http://www.google.com/">CopyRight</a>
+	</footer>
   </div>
+  
+
 </body>
 </html>
